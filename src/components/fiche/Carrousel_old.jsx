@@ -7,17 +7,26 @@ function Carrousel({pics}) {
 
     const [count, setCount] = useState(0)
 
-    let totalPics = {pics}.pics.length
-    console.log(totalPics)
-    useEffect(() => {
+    const totalPics = {pics}.pics.length
 
-        if (totalPics < count+1) {
+    const nextPic = () => {
+        if (totalPics > count+1) {
+            setCount(count + 1);
+            console.log('+1')
+        } else {
+            console.log('else')
             setCount(0);
-        } else if (0 > count) {
-            setCount(totalPics-1);
-        } 
-    },[count])
+        }
+    }
 
+    const lastPic = () => {
+        if (count > 0) {
+            setCount(count - 1)
+            console.log('-1')
+        } else {
+            setCount(totalPics-1)
+        }
+    }
 
     
     return(
@@ -25,8 +34,8 @@ function Carrousel({pics}) {
             <img className='carrouselpic'src={pics[count]}></img>
             
         <div className="arrowcontainer">
-            <img className="arrowback" src={arrowback} alt="arrow back" onClick={setCount(count+1)}></img>
-            <img className="arrowfwd" src={arrowfwd} alt="arrow forward" onClick={setCount(count-1)}></img>
+            <img className="arrowback" src={arrowback} alt="arrow back" onClick={lastPic}></img>
+            <img className="arrowfwd" src={arrowfwd} alt="arrow forward" onClick={nextPic}></img>
             </div>
         <div className="numbercontainer">
             <div className="slidenumber">{count+1} / {pics.length} </div>
