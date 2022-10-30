@@ -1,0 +1,49 @@
+.carrouselpic {
+    width: 1240px;
+    border-radius: 25px;
+}
+
+.carrousel {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 415px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.arrowback {
+    margin: 10px;
+}
+
+.arrowfwd {
+    margin: 10px;
+}
+
+.slidenumber {
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+color: #FFFFFF;
+}
+
+.arrowcontainer {
+    width: 1240px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbercontainer {
+    width: 1240px;
+    position: absolute;
+    top: 547px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

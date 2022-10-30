@@ -1,0 +1,110 @@
+
+.fiche-body {
+    width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title-container, .tags-rating-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titlelocation {
+    display: flex;
+    flex-direction: column;
+}
+
+.host {
+    display: flex;
+    align-items: center;
+}
+
+.titlel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.location, .hostname {
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+color: #FF6060;
+}
+
+.hostpic {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.tags {
+    display: flex;
+}
+
+.star {
+    margin-left: 10px;
+}
+
+.dropdown {
+    display: flex;
+    background: #FF6060;
+    border-radius: 10px;
+    width: 45%;
+    height: 52px;
+    align-items: center;
+}
+
+.dropdowntitlecontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+    position: relative;
+    top: 10px;
+}
+
+.dropdowntitle {
+    font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+color: #FFFFFF;
+margin-left: 4%;
+}
+
+.dropdowngrey {
+    background: #F7F7F7;
+border-radius: 10px;
+height: auto;
+width: 45%;
+
+}
+
+.dropdowngreycontainer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.dropdowntxt {
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 142.6%;
+margin-left: 4%;
+margin-right: 4%;
+margin-top: 30px;
+margin-bottom: 15px;
+color: #FF6060;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
