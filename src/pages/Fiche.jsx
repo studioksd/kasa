@@ -4,6 +4,7 @@ import axios from 'axios'
 import Carrousel from '../components/fiche/Carrousel'
 import Tag from '../components/fiche/Tag'
 import Rating from '../components/fiche/Rating'
+import Collapse from '../components/Collapse'
 import '../styles/Fiche.css'
 
 function Fiche() {
@@ -25,13 +26,14 @@ function Fiche() {
         axios.get('../logements.json')
         .then((res) => {
             res.data.forEach(data => {
-                if (data.id == params.id) {
+                if (data.id === params.id) {
                     setLogement(data);
                 }
             })
         })
-    }, [])
+    },[params])
 
+    console.log(logement)
     const tagList = logement.tags.map((tag, index) => 
     <Tag key={index} tag={tag} />);
 
@@ -39,8 +41,11 @@ function Fiche() {
         <li>{equipement}</li>
     );
 
+    console.log(logement.description)
+
     return (
 <div className='fiche-body'>
+
     <Carrousel pics={logement.pictures} />
 
     <div className='title-container'> 
@@ -64,33 +69,10 @@ function Fiche() {
     </div>
 
     <div className='dropdowntitlecontainer'>
-        <div className='dropdown'>
-
-        <div className='dropdowntitle'>
-            Description
-        </div>
-    
-        </div>
-        <div className='dropdown'>
-            <div className='dropdowntitle'>
-                Equipements
-            </div>
+        
+        <Collapse className='logement-collapse' title='Description' content={logement.description} />
+        <Collapse className='logement-collapse' title='Equipements' content={equipementList} />
             
-        </div>
-    </div>
-    <div className='dropdowngreycontainer'>
-        <div className='dropdowngrey'>
-        <div className='dropdowntxt'>
-                {logement.description}
-            </div>
-            
-        </div>
-        <div className='dropdowngrey'>
-        <div className='dropdowntxt'>
-                <ul>{equipementList}</ul>
-            </div>
-            
-        </div>
     </div>
 
 </div>

@@ -10,15 +10,12 @@ function Rating({rating}) {
     for (let i = 0; i < 5; i++) {
         if (i < note) {
             stars.push({star}.star);
-            console.log(stars)
         } else {
             stars.push({stargrey}.stargrey);
-            console.log(stars)
         }
         
     }
 
-    console.log(stars);
 
     const starsList = stars.map((star, index) =>
         <img className="star" alt='star' key={index} src={star}></img>)
