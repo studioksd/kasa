@@ -21,10 +21,10 @@ function Collapse(props) {
 
 
     return(
-        <div className='collapsecontainer'>
+        <div className={props.className}>
         <div className='dropdown'>
 
-        <div className='dropdowntitle'>
+        <div className={props.titleClassName}>
             {props.title}
         </div>
         {arrow}
@@ -32,7 +32,7 @@ function Collapse(props) {
 
         {open && (
             <div className="dropdowngrey">
-            <div className="dropdowntxt">{props.content}</div>
+            <div className={props.txtClassName}>{props.content}</div>
             </div>
             
         )}

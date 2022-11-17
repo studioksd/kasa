@@ -4,7 +4,7 @@ import Portfolio from '../components/home/Portfolio'
 
 function Home() {
   return (
-    <div>
+    <div className='home-container'>
       <Banner />
       <Portfolio/>
     </div>

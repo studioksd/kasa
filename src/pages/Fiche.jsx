@@ -70,8 +70,8 @@ function Fiche() {
 
     <div className='dropdowntitlecontainer'>
         
-        <Collapse className='logement-collapse' title='Description' content={logement.description} />
-        <Collapse className='logement-collapse' title='Equipements' content={equipementList} />
+        <Collapse className='collapsecontainer' titleClassName='dropdowntitle' txtClassName='dropdowntxt' title='Description' content={logement.description} />
+        <Collapse className='collapsecontainer' titleClassName='dropdowntitle' txtClassName='dropdowntxt' title='Equipements' content={equipementList} />
             
     </div>
 

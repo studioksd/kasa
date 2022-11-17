@@ -117,8 +117,148 @@ li {
 
 .collapsecontainer {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    width: 45%;
+    justify-content: flex-start;
     flex-direction: column;
     margin-bottom: 31px;
+}
+
+@media only screen and (max-width: 600px) {
+    .fiche-body {
+        width: 100%;
+    }
+
+        .carrouselpic {
+            width: 100%;
+            border-radius: 25px;
+        }
+        
+        .carrousel {
+            display: flex;
+            align-items: center;
+            width: 92%;
+            height: 255px;
+            margin: 0 4% 4% 4%;
+            border-radius: 25px;
+            object-fit: cover;
+            overflow: hidden;
+            
+        }
+        
+        .arrowback {
+            margin: 10px;
+        }
+        
+        .arrowfwd {
+            margin: 10px;
+        }
+        
+        .slidenumber {
+            font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 142.6%;
+        color: #FFFFFF;
+        }
+        
+        .arrowcontainer {
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .numbercontainer {
+            width: 100%;
+            position: absolute;
+            top: 547px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .title-container, .tags-rating-container, .dropdowntitlecontainer {
+            margin: 0 4% 0 4%;
+        }
+
+        .tags-rating-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .rating {
+            margin: 4% 0 4% 0;
+        }
+
+        .host {
+            position: absolute;
+            top: 90%;
+            left: 62%;
+        }
+
+        .star {
+            width: 15px;
+        }
+
+        .titlel {
+            font-size: 18px;
+        }
+
+        .location {
+            font-size: 14px;
+        }
+
+        .hostname, .dropdowntxt {
+            font-size: 12px;
+        }
+
+        .dropdowntitle {
+            font-size: 13px;
+            
+        }
+
+        .tagtext {
+            font-size: 10px;
+        }
+
+        .tagcontainer {
+            border-radius: 5px;
+        }
+
+        .hostpic {
+            width: 32px;
+            height: 32px;
+        }
+
+        .dropdown {
+            border-radius: 5px;
+            height: 31px;
+        }
+
+        .collapsearrow {
+            width: 15px;
+            padding-right: 4%;
+        }
+
+        .arrowback, .arrowfwd {
+            width: 11px;
+        }
+
+        .arrowcontainer {
+            width: 92%;
+        }
+
+        .numbercontainer {
+            display: none;
+        }
+
+        .dropdowntitlecontainer {
+            flex-direction: column;
+        }
+
+        .collapsecontainer {
+            width: 100%;
+            margin-bottom: 2%;
+        }
 }

@@ -6,28 +6,58 @@
     overflow: hidden;
     object-fit: cover;
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+.cardtitlecontainer {
+    position: relative;
+    top: 277px;
+    left: -488px;
+    width: 300px;
+    height: 52px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .title {
-    position: relative;
-    /* top: 80%; */
-    left: -143%;
-    width: 100%;
+    width: 300px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 142.6%;
     color: #FFFFFF;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 12px;
     line-break: loose;
 }
 
-.logement-img {
-    border-radius: 10px;
+.logement-link {
+    margin-top: 4%;
 }
 
 a {
     margin-top: 50px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+        height: 200px;
+        justify-content: flex-start;
+    }
+
+    .logement-link {
+        width: 100%;
+        height: auto;
+        margin: 0 4% 4% 4%;
+    }
+
+    .title {
+        margin-left: 4%;
+    }
 }

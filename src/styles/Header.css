@@ -19,8 +19,44 @@
 
 a {
     text-decoration: none;
+    margin-top: 0;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        max-width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        margin: 5% 0 5% 5%;
+        max-height: 70px;
+    }
+
+    .navlink {
+        min-width: 70px;
+        font-size: 12px;
+        padding: 5%;
+        margin-right: 2%;
+        line-height: 100%;
+    }
+
+    .navlink-txt {
+        text-transform: uppercase;
+    }
+    
+    nav {
+        margin-left: 13%;
+    }
+
+    .headerimg {
+        width: 40%;
+    }
 }
