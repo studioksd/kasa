@@ -34,3 +34,28 @@ margin-top: 200px;
 margin-bottom: 150px;
 height: auto;
 }
+
+@media only screen and (max-width: 600px) {
+    .notfound {
+        font-size: 96px;
+        margin-top: 10%;;
+    }
+
+    .subtext {
+        display: flex;
+        width: 60%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .back {
+        color: #FF6060;
+        font-weight: 500;
+    font-size: 14px;
+    line-height: 142.6%;
+    margin-top: 120px;
+    margin-bottom: 90px;
+    height: auto;
+    }
+
+}
