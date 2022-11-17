@@ -33,27 +33,24 @@ nav {
 
 @media only screen and (max-width: 600px) {
     .header {
-        max-width: 90%;
+        max-width: 92%;
         display: flex;
-        justify-content: flex-start;
-        margin: 5% 0 5% 5%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 4% 0 3% 4%;
         max-height: 70px;
     }
 
     .navlink {
         min-width: 70px;
         font-size: 12px;
-        padding: 5%;
-        margin-right: 2%;
+        text-align: center;
+        padding: 0;
         line-height: 100%;
     }
 
     .navlink-txt {
         text-transform: uppercase;
-    }
-    
-    nav {
-        margin-left: 13%;
     }
 
     .headerimg {
