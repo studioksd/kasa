@@ -32,6 +32,8 @@
     font-size: 18px;
     line-height: 142.6%;
     color: #FFFFFF;
+    position: relative;
+    top: 190px;
 }
 
 .arrowcontainer {
@@ -46,7 +48,6 @@
     max-width: 1240px;
     width: 100%;
     position: absolute;
-    top: 577px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
