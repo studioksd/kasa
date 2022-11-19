@@ -1,18 +1,20 @@
 .aboutcontainer {
-    width: 1023px;
+    max-width: 1023px;
     margin: auto;
     font-size: 24px;
 }
 
 .aboutbanner {
-    width: 1240px;
+    max-width: 1240px;
+    width: 100%;
+    object-fit: cover;
     height: 223px;
     border-radius: 25px;
     margin: 0 auto;
 }
 
 .bannerdiv {
-    width: 1240px;
+    max-width: 1240px;
     border-radius: 25px;
     margin: 0 auto;
     margin-bottom: 31px;

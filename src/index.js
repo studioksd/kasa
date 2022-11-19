@@ -16,8 +16,10 @@ const root = createRoot(container);
 
 root.render(
     <React.StrictMode>
+    <div id='main'>
     <Router>
       <Header />
+      
       <Routes>
         <Route exact path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
@@ -25,6 +27,7 @@ root.render(
         <Route path='*' element={<PageNotFound/>} />
       </Routes>
     </Router>
+    </div>
     <Footer />
     </React.StrictMode>
 )

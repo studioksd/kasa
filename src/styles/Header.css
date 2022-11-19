@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     height: 171px;
-    width: 1240px;
+    max-width: 1240px;
     margin: auto;
 }
 

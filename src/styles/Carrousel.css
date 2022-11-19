@@ -1,17 +1,19 @@
 .carrouselpic {
-    width: 1240px;
+    max-width: 1240px;
     border-radius: 25px;
+    object-fit: cover;
 }
 
 .carrousel {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: auto;
     height: 415px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 25px;
-    object-fit: cover;
     overflow: hidden;
     margin-bottom: 30px;
 }
@@ -33,16 +35,18 @@ color: #FFFFFF;
 }
 
 .arrowcontainer {
-    width: 1240px;
+    max-width: 1240px;
+    width: 94%;
     position: absolute;
     display: flex;
     justify-content: space-between;
 }
 
 .numbercontainer {
-    width: 1240px;
+    max-width: 1240px;
+    width: 100%;
     position: absolute;
-    top: 547px;
+    top: 577px;
     display: flex;
     justify-content: center;
     align-items: flex-end;

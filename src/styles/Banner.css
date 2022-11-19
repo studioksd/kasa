@@ -1,5 +1,4 @@
 .container {
-width: 100%;
 border-radius: 25px;
 object-fit: cover;
 margin-bottom: 43px;
@@ -11,7 +10,7 @@ height: 223px;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 1240px;
+max-width: 1240px;
   margin-right: auto;
   margin-left: auto;
 }

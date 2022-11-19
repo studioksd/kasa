@@ -6,7 +6,7 @@
     height: auto;
     justify-content: space-evenly;
     padding-bottom: 50px;
-    width: 1240px;
+    max-width: 1240px;
   margin: auto;
 }
 

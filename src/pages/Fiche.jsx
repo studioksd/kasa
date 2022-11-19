@@ -47,27 +47,28 @@ function Fiche() {
 <div className='fiche-body'>
 
     <Carrousel pics={logement.pictures} />
-
+    <div className='fiche-info-container'>
     <div className='title-container'> 
         <div className='titlelocation'>
             <div className='titlel'>{logement.title}</div>
             <div className='location'>{logement.location}</div>
         </div>
-        <div className='host'>
-            <div className='hostname'>{logement.host.name}</div>
-            <img className='hostpic' src={logement.host.picture} alt={logement.host.name}></img>
+        <div className='tags'>
+        {tagList}
         </div>
+        
     </div>
 
     <div className='tags-rating-container'>
-        <div className='tags'>
-        {tagList}
+    <div className='host'>
+            <div className='hostname'>{logement.host.name}</div>
+            <img className='hostpic' src={logement.host.picture} alt={logement.host.name}></img>
         </div>
         <div className='rating'>
             <Rating rating={logement.rating} />
         </div>
     </div>
-
+    </div>
     <div className='dropdowntitlecontainer'>
         
         <Collapse className='collapsecontainer' titleClassName='dropdowntitle' txtClassName='dropdowntxt' title='Description' content={logement.description} />
