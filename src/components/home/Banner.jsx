@@ -3,11 +3,11 @@ import '../../styles/Banner.css'
 
 function Banner() {
 
-    return(
+    return (
         <div className="homebannerdiv">
-        <div className="container">
-            <p className="bannertxt">Chez vous, partout et ailleurs</p>
-        </div>
+            <div className="container">
+                <p className="bannertxt">Chez vous, partout et ailleurs</p>
+            </div>
         </div>
     )
 }

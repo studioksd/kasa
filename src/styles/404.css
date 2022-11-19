@@ -1,10 +1,10 @@
 .notfound {
-    
+
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 288px;
-line-height: 142.6%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
     color: #FF6060;
 }
 
@@ -28,11 +28,11 @@ line-height: 142.6%;
 .back {
     color: #FF6060;
     font-weight: 500;
-font-size: 18px;
-line-height: 142.6%;
-margin-top: 200px;
-margin-bottom: 150px;
-height: auto;
+    font-size: 18px;
+    line-height: 142.6%;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    height: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -51,11 +51,11 @@ height: auto;
     .back {
         color: #FF6060;
         font-weight: 500;
-    font-size: 14px;
-    line-height: 142.6%;
-    margin-top: 120px;
-    margin-bottom: 90px;
-    height: auto;
+        font-size: 14px;
+        line-height: 142.6%;
+        margin-top: 120px;
+        margin-bottom: 90px;
+        height: auto;
     }
 
 }

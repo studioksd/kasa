@@ -2,9 +2,9 @@ import React from "react";
 import img from "../../assets/images/aboutbanner.png"
 
 function Banner() {
-    return(
+    return (
         <div className="bannerdiv">
-            <img className='aboutbanner'src={img} alt='Bannière'></img>
+            <img className='aboutbanner' src={img} alt='Bannière'></img>
         </div>
     )
 }

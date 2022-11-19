@@ -4,9 +4,9 @@ import '../styles/Footer.css'
 function Footer() {
     return (
         <div id='footer'>
-        <img src={logo} alt='Logo'>
-        </img>
-        <p>© 2020 Kasa. All rights reserved</p>
+            <img src={logo} alt='Logo'>
+            </img>
+            <p>© 2020 Kasa. All rights reserved</p>
         </div>
     )
 }

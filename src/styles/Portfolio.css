@@ -1,12 +1,12 @@
 .portfolio {
-    background: #F7F7F7;
-    border-radius: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    justify-content: space-evenly;
-    padding-bottom: 50px;
-    max-width: 1240px;
+  background: #F7F7F7;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+  max-width: 1240px;
   margin: auto;
 }
 

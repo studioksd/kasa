@@ -4,12 +4,12 @@ import Card from './Card'
 import '../../styles/Portfolio.css'
 
 function Portfolio() {
-    const [logements, setLogements] = useState([]) 
+    const [logements, setLogements] = useState([])
     useEffect(() => {
         axios.get('logements.json')
-        .then((res) => setLogements(res.data))
+            .then((res) => setLogements(res.data))
     }, [])
-    return(
+    return (
         <div className="portfolio">
             {logements.map((logement) => (
                 <Card key={logement.id} logement={logement} />

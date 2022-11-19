@@ -15,19 +15,18 @@ const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
-    <React.StrictMode>
+  <React.StrictMode>
     <div id='main'>
-    <Router>
-      <Header />
-      
-      <Routes>
-        <Route exact path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>} />
-        <Route path={'/fiche/:id'} element={<Fiche/>} />
-        <Route path='*' element={<PageNotFound/>} />
-      </Routes>
-    </Router>
+      <Router>
+        <Header />
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path={'/fiche/:id'} element={<Fiche />} />
+          <Route path='*' element={<PageNotFound />} />
+        </Routes>
+      </Router>
     </div>
     <Footer />
-    </React.StrictMode>
+  </React.StrictMode>
 )

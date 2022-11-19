@@ -31,7 +31,7 @@ function Collapse(props) {
         </div>
 
         {open && (
-            <div className="dropdowngrey">
+            <div className={props.greyClassName}>
             <div className={props.txtClassName}>{props.content}</div>
             </div>
             
