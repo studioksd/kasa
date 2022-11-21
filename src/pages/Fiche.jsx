@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import axios from 'axios'
 import Carrousel from '../components/fiche/Carrousel'
 import Tag from '../components/fiche/Tag'
 import Rating from '../components/fiche/Rating'
 import Collapse from '../components/Collapse'
+import logementsJSON from '../assets/json/logements.json'
 import '../styles/Fiche.css'
 
 function Fiche() {
@@ -23,15 +23,12 @@ function Fiche() {
         tags: []
     })
     useEffect(() => {
-        axios.get('../logements.json')
-            .then((res) => {
-                res.data.forEach(data => {
-                    if (data.id === params.id) {
-                        setLogement(data);
-                    }
-                })
-            })
-    }, [params])
+        logementsJSON.forEach(data => {
+            if (data.id === params.id) {
+                setLogement(data);
+            }
+        })
+            }, [params])
 
     const tagList = logement.tags.map((tag, index) =>
         <Tag key={index} tag={tag} />);

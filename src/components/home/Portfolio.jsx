@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import axios from 'axios';
 import Card from './Card'
 import '../../styles/Portfolio.css'
+import logementsJSON from '../../assets/json/logements.json'
 
 function Portfolio() {
     const [logements, setLogements] = useState([])
     useEffect(() => {
-        axios.get('logements.json')
-            .then((res) => setLogements(res.data))
+        setLogements(logementsJSON)
     }, [])
+
     return (
         <div className="portfolio">
             {logements.map((logement) => (
