@@ -13,13 +13,13 @@ function Collapse(props) {
     let arrow;
     
     if (open) {
-        arrow = <img className='collapsearrow' src={up} alt='down arrow' onClick={toggle} />
+        arrow = <img className='collapsearrow' src={up} alt='down arrow' />
     } else {
-        arrow = <img className='collapsearrow' src={down} alt='down arrow' onClick={toggle} />
+        arrow = <img className='collapsearrow' src={down} alt='down arrow' />
     }
 
     return(
-        <div className={props.className}>
+        <div className={props.className} onClick={toggle} >
         <div className='dropdown'>
 
         <div className={props.titleClassName}>

@@ -22,7 +22,10 @@ root.render(
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path={'/fiche/:id'} element={<Fiche />} />
+          <Route path='/fiche'>
+              <Route path={':id'} element={<Fiche />} />
+              <Route path='*' element={<PageNotFound />} />
+          </Route>
           <Route path='*' element={<PageNotFound />} />
         </Routes>
       </Router>
