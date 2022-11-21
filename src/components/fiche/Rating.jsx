@@ -16,7 +16,6 @@ function Rating({ rating }) {
 
     }
 
-
     const starsList = stars.map((star, index) =>
         <img className="star" alt='star' key={index} src={star}></img>)
 

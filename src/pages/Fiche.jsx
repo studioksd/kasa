@@ -33,15 +33,12 @@ function Fiche() {
             })
     }, [params])
 
-    console.log(logement)
     const tagList = logement.tags.map((tag, index) =>
         <Tag key={index} tag={tag} />);
 
     const equipementList = logement.equipments.map((equipement) =>
         <li>{equipement}</li>
     );
-
-    console.log(logement.description)
 
     return (
         <div className='fiche-body'>

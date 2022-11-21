@@ -8,7 +8,7 @@ function Collapse(props) {
 
     const toggle = () => {
         setOPen(!open);
-      };
+    };
 
     let arrow;
     
@@ -17,8 +17,6 @@ function Collapse(props) {
     } else {
         arrow = <img className='collapsearrow' src={down} alt='down arrow' onClick={toggle} />
     }
-
-
 
     return(
         <div className={props.className}>

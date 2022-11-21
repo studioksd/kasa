@@ -8,7 +8,7 @@ function Carrousel({ pics }) {
     const [count, setCount] = useState(0)
 
     let totalPics = { pics }.pics.length
-    console.log({ pics })
+
     useEffect(() => {
 
         if (totalPics < count + 1) {
