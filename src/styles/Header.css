@@ -31,7 +31,7 @@ nav {
     align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .header {
         max-width: 92%;
         display: flex;
@@ -54,6 +54,6 @@ nav {
     }
 
     .headerimg {
-        width: 40%;
+        max-width: 40%;
     }
 }
