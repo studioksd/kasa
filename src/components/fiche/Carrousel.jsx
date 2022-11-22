@@ -23,14 +23,15 @@ function Carrousel({ pics }) {
     return (
         <div className="carrousel">
             <img className='carrouselpic' src={pics[count]} alt='Fiche'></img>
-
-            <div className="arrowcontainer">
+            { (totalPics > 1) && (<><div className="arrowcontainer">
                 <img className="arrowback" src={arrowback} alt="arrow back" onClick={() => setCount(count - 1)}></img>
                 <img className="arrowfwd" src={arrowfwd} alt="arrow forward" onClick={() => setCount(count + 1)}></img>
-            </div>
-            <div className="numbercontainer">
-                <div className="slidenumber">{count + 1} / {pics.length} </div>
-            </div>
+            </div><div className="numbercontainer">
+                    <div className="slidenumber">{count + 1} / {pics.length} </div>
+                </div></>)
+
+            }
+            
 
         </div>
     )
